@@ -1,0 +1,14 @@
+services:
+  db:
+    container_name: mongodb
+    image: mongo
+  app:
+    container_name: app
+    build: .
+    ports:
+      - "8888:8888"
+    environment:
+      DB_HOST: mongodb://mongodb:27017
+    depends_on:
+      - "db"
+    restart: unless-stopped
