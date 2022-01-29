@@ -12,3 +12,14 @@ services:
     depends_on:
       - "db"
     restart: unless-stopped
+  bot:
+    container_name: bot
+    image: 11me/qr4funbot:1
+    ports:
+      - "8080:8080"
+    environment:
+      TG_TOKEN: "${TG_TOKEN}"
+      WEB_HOOK: "${WEB_HOOK}"
+      API_ENDPOINT: "${API_ENDPOINT}"
+      LPORT: "${LPORT}"
+      HANDLER_ENDPOINT: "${HANDLER_ENDPOINT}"
