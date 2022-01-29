@@ -16,7 +16,7 @@ exports.insert = async function(data) {
     const res = await client.db(DB_NAME).collection(collname).insertOne(data);
     return res.insertedId.toString();
   } catch (e) {
-    console.log(e);
+    console.log('Error when inserting', e);
   }
 }
 
@@ -27,6 +27,6 @@ exports.getTextByID = async function(id) {
 
     return data
   } catch (e) {
-    console.log(e);
+    console.log(`Error while retrieving data by id`, e);
   }
 }
