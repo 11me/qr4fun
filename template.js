@@ -19,6 +19,7 @@ exports.html = text => {
               margin: calc(100vh/2) auto;
               width: 100%;
               font-size: 48px;
+              text-align: center;
             }
           </style>
         </head>
