@@ -32,7 +32,7 @@ app.get('/u/:id', async (req, res) => {
       return
     }
   }
-  logger.warn(`GET /u/${id}`);
+  console.log(`GET /u/${id}`);
   res.sendStatus(404);
 });
 

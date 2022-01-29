@@ -11,7 +11,6 @@
   "dependencies": {
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
-    "logging": "^3.3.0",
     "mongodb": "^4.3.1",
     "sanitize-html": "^2.6.1"
   }
