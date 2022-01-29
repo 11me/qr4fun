@@ -14,7 +14,7 @@ GET /u/:id
 ```
 Get the message.
 
-ENV
-DB_HOST - mongodb host. Ex: mongodb://localhost:27017
-HOST - Site hosted URL. Ex: https://example.com
-PORT - Listen on port.
+* ENV
+* DB_HOST - mongodb host. Ex: mongodb://localhost:27017
+* HOST - Site hosted URL. Ex: https://example.com
+* PORT - Listen on port.
