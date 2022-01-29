@@ -33,7 +33,7 @@ app.post('/create', jsonParser, async (req, res) => {
     ...data,
     timestamp: new Date()
   });
-  const url = `https://${HOST}/u/${id}`
+  const url = `http://${HOST}/u/${id}`
 
   res.json({
     url
