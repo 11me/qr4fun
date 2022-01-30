@@ -52,7 +52,7 @@ app.post('/create', jsonParser, async (req, res) => {
   });
   const url = `http://${HOST}/u/${id}`
 
-  console.log(`POST ${data}`)
+  console.log(`POST from: ${data?.username} with msg: ${data.text}`)
   res.json({
     url
   });
