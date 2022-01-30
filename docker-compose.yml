@@ -2,6 +2,10 @@ services:
   db:
     container_name: mongodb
     image: mongo
+    volumes:
+      - type: volume
+        source: mongoVol
+        target: /data
   app:
     container_name: app
     build: .
@@ -24,3 +28,6 @@ services:
       API_ENDPOINT: "${API_ENDPOINT}"
       LPORT: "${LPORT}"
       HANDLER_ENDPOINT: "${HANDLER_ENDPOINT}"
+volumes:
+  mongoVol:
+    external: true
