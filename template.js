@@ -20,6 +20,7 @@ exports.html = text => {
               width: 100%;
               font-size: 48px;
               text-align: center;
+              overflow-wrap: break-word;
             }
           </style>
         </head>
